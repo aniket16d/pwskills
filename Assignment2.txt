@@ -1,0 +1,198 @@
+Ans1.a)Arithmetic Operators
+     b)Unary Operators
+     c)Assignment Operator
+     d)Relational Operators
+     e)Logical Operators
+     f)Ternary Operator
+     g)Bitwise Operators
+     h)Shift Operators
+     i)instance of operator
+
+ Ans2.Increment operator is used to increment a value by 1. There are two varieties of increment operator: 
+
+	Post-Increment: Value is first used for computing the result and then incremented.
+	Pre-Increment: Value is incremented first and then the result is computed.
+
+	example:-
+	class Test 
+	{
+   
+    
+    	public static void main(String[] args)
+    	{
+       
+        int a = 10;
+        int b = ++a;
+        
+       
+        System.out.println(b);
+    	}
+	}
+
+Decrement operator is used for decrementing the value by 1. There are two varieties of decrement operators. 
+
+	Post-decrement: Value is first used for computing the result and then decremented.
+	Pre-decrement: Value is decremented first and then the result is computed.
+
+example:-
+
+ class Test
+    {
+ 
+    	public static void main(String[] args)
+    	{
+       
+        int a = 10;
+ 
+        int b = ++a;
+ 
+        b = 10 ++;
+ 
+        
+        System.out.println(b);
+        }
+    }
+
+Ans3.Conditional Operators:-
+		The && and || operators perform Conditional-AND and Conditional-OR operations on two boolean expressions. These operators exhibit "short-circuiting" behavior, which means that the second operand is evaluated only if needed.
+
+			&& Conditional-AND
+			|| Conditional-OR
+
+The following program, Demo1, tests these operators:
+
+
+	class Demo1 
+	{
+
+    public static void main(String[] args)
+    {
+        int value1 = 1;
+        int value2 = 2;
+        if((value1 == 1) && (value2 == 2))
+         System.out.println("value1 is 1 AND value2 is 2");
+        if((value1 == 1) || (value2 == 1))
+            System.out.println("value1 is 1 OR value2 is 1");
+    }
+    }
+Another conditional operator is ?:, which can be thought of as shorthand for an if-then-else statement . This operator is also known as the ternary operator because it uses three operands. In the following example, this operator should be read as: "If someCondition is true, assign the value of value1 to result. Otherwise, assign the value of value2 to result."
+
+The following program, Demo2, tests the ?: operator:
+
+
+class Demo2 
+{
+
+    public static void main(String[] args)
+    {
+        int value1 = 1;
+        int value2 = 2;
+        int result;
+        boolean someCondition = true;
+        result = someCondition ? value1 : value2;
+
+        System.out.println(result);
+    }
+}
+Because someCondition is true, this program prints "1" to the screen. 
+
+Ans 4.  a)Unary Operators
+ 		b)Ternary Operator
+ 		c)Binary Operator
+
+Ans 5. Conditional statements in Java are utilized to make decisions in a program based on some specific conditions. The main constraints are ‘if,’ ‘else,’ and ‘else if.' These statements allow the program to execute different lines of code depending on the scenario, whether a particular condition is true or false. These are vital for controlling the flow of a program that enables the developers to create the logic that is able to respond dynamically to the data or the input, which further helps in making the program more powerful and flexible.
+
+Ans 6. if (condition)
+	{
+    // Executes this block if
+    // condition is true
+	}
+   else
+	{
+    // Executes this block if
+    // condition is false
+	}
+
+Ans 7. a)for statements.
+       b)while statements.
+       c)do-while statements.
+
+Ans 8. An array is a container object that holds a fixed number of values of a single type. The length of an array is established when the array is created.
+
+Ans 9. class ArrayDemo
+
+   {
+       public static void main(String[] args) 
+       {
+        // declares an array of integers
+        int[] anArray;
+
+        // allocates memory for 10 integers
+        anArray = new int[10];
+           
+        // initialize first element
+        anArray[0] = 100;
+        // initialize second element
+        anArray[1] = 200;
+        // and so forth
+        anArray[2] = 300;
+        anArray[3] = 400;
+        anArray[4] = 500;
+        anArray[5] = 600;
+        anArray[6] = 700;
+        anArray[7] = 800;
+        anArray[8] = 900;
+        anArray[9] = 1000;
+        }
+     }
+
+
+Ans 10.StringBuffer Class: StringBuffer is a peer class of String that provides much of the functionality of strings. The string represents fixed-length, immutable character sequences while StringBuffer represents growable and writable character sequences. StringBuffer may have characters and substrings inserted in the middle or appended to the end. It will automatically grow to make room for such additions and often has more characters preallocated than are actually needed, to allow room for growth. In order to create a string buffer, an object needs to be created, (i.e.), if we wish to create a new string buffer with name str, then:
+
+StringBuffer str = new StringBuffer();
+
+// Java program to demonstrate 
+// the StringBuffer class 
+  
+public class Test { 
+  
+    // Driver code 
+    public static void main(String args[]) 
+    { 
+  
+        // Creating a new StringBuffer 
+        StringBuffer str 
+            = new StringBuffer("Hello"); 
+  
+        str.append(" World!"); 
+  
+        System.out.println(str); 
+    } 
+} 
+
+StringBuilder Class: Similar to StringBuffer, the StringBuilder in Java represents a mutable sequence of characters. Since the String Class in Java creates an immutable sequence of characters, the StringBuilder class provides an alternative to String Class, as it creates a mutable sequence of characters. The function of StringBuilder is very much similar to the StringBuffer class, as both of them provide an alternative to String Class by making a mutable sequence of characters. Similar to StringBuffer, in order to create a new string with the name str, we need to create an object of StringBuilder, (i.e.):
+
+StringBuilder str = new StringBuilder(); 
+
+// Java program to demonstrate 
+// the StringBuilder class 
+  
+public class Test2 
+{ 
+  
+    // Driver code 
+    public static void main(String args[]) 
+    { 
+  
+        // Creating a new StringBuilder 
+        StringBuilder str 
+            = new StringBuilder("Hello"); 
+  
+        str.append(" World!"); 
+  
+        System.out.println(str); 
+    } 
+} 
+
+
+
