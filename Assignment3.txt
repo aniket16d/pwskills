@@ -1,0 +1,55 @@
+Ans 1.
+1. JDK (Java Development Kit) is a Kit that provides the environment to develop and execute(run) the Java program. JDK is a kit(or package) that includes two things
+
+Development Tools(to provide an environment to develop your java programs)
+JRE (to execute your java program).
+
+2. JRE (Java Runtime Environment) is an installation package that provides an environment to only run(not develop) the java program(or application)onto your machine. JRE is only used by those who only want to run Java programs that are end-users of your system.
+
+3. JVM (Java Virtual Machine) is a very important part of both JDK and JRE because it is contained or inbuilt in both. Whatever Java program you run using JRE or JDK goes into JVM and JVM is responsible for executing the java program line by line, hence it is also known as an interpreter.
+
+Ans 2. Java is platform-independent because it uses a virtual machine. Java code is compiled into bytecodes. These platform-neutral bytecodes are independent of operating systems and hardware architectures. The JVM, which executes Java programs, allows platform independence. The JVM interprets or JIT compiles bytecodes into machine code for the operating system. Java uses the JVM to compile code once for all hardware architectures and operating systems. 
+
+The virtual machine bridges bytecodes to any JVM-compatible system. Developers can write code once and run it on multiple platforms without recompilation. This method provides a consistent programming environment by abstracting the hardware and operating system. Java programs behave uniformly across platforms, making them easy to design and deploy. The Java virtual machine handles hardware-related details, relieving developers from platform-specific compilation, and reducing run-time requirements.
+The Java Virtual Machine and bytecode compilation make Java platform independent. The JVM executes platform-neutral bytecodes from the compilation. This potent combination lets Java programs run across operating systems and hardware architectures, simplifying development. 
+
+Ans 3. Need of Java Varargs
+Until JDK 4, we cant declare a method with variable no. of arguments. If there is any change in the number of arguments, we have to declare a new method. This approach increases the length of the code and reduces readability.
+
+Before JDK 5, variable-length arguments could be handled in two ways. One uses an overloaded method(one for each), and another puts the arguments into an array and then passes this array to the method. Both of them are potentially error-prone and require more code. 
+
+To resolve these problems, Variable Arguments (Varargs) were introduced in JDK 5. From JDK 5 onwards, we can declare a method with a variable number of arguments. Such types of methods are called Varargs methods. The varargs feature offers a simpler, better option.
+
+Ans 5. There are three types of variables in java:-
+
+1. Local Variables 
+A variable defined within a block or method or constructor is called a local variable. 
+
+These variables are created when the block is entered, or the function is called and destroyed after exiting from the block or when the call returns from the function.
+
+The scope of these variables exists only within the block in which the variables are declared, i.e., we can access these variables only within that block.
+
+Initialization of the local variable is mandatory before using it in the defined scope.
+
+
+2.Instance variables are non-static variables and are declared in a class outside of any method, constructor, or block. 
+
+As instance variables are declared in a class, these variables are created when an object of the class is created and destroyed when the object is destroyed.
+
+Unlike local variables, we may use access specifiers for instance variables. If we do not specify any access specifier, then the default access specifier will be used.
+
+Initialization of an instance variable is not mandatory. Its default value is dependent on the data type of variable. For String it is null, for float it is 0.0f, for int it is 0, for Wrapper classes like Integer it is null, etc.
+
+Instance variables can be accessed only by creating objects.
+
+We initialize instance variables using constructors while creating an object. We can also use instance blocks to initialize the instance variables.
+
+Ans 6. a)Class(Method) Area
+	   b)Heap
+       c)Stack
+       d)Program Counter Register
+       e)Native Method Stack
+
+Ans 7.The JIT compiler converts recurring bytecode code blocks into machine code, which the interpreter can use immediately. In Java, JIT is an essential component of the JVM. It improves execution performance by a factor of ten compared to the preceding level. To put it another way, it’s a long-running, computer-intensive application that optimizes performance. It improves the performance of a Java application during compilation or execution.
+
+The JIT compiler is located inside the JVM.
