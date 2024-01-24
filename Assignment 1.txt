@@ -1,0 +1,38 @@
+
+Ans 1. Primitive data types  includes byte, short, int, long, float, double, boolean and char 
+
+Ans 2.In Java, identifiers are used for identification purposes. Java Identifiers can be a class name, method name, variable name, or label. 
+
+Ans 3.The main purpose of using a class being declared as final is to prevent the class from being subclassed. If a class is marked as final then no class can inherit any feature from the final class.
+
+Ans 4. a)By  declaring a class with final keyword.
+       b)By  declaring all of its constructors as private.
+
+Ans 5. Yes , we can create an instance of final class in another class.
+
+Ans 6.Volatile keyword is used to modify the value of a variable by different threads. It is also used to make classes thread safe. It means that multiple threads can use a method and instance of the classes at the same time without any problem. The volatile keyword can be used either with primitive type or objects.
+
+Ans 7. a)Transient is a variables modifier used  in serialization. 
+
+       b)Transient keyword plays an important role to meet security constraints.
+
+Ans 8. Type casting is when you assign a value of one primitive data type to another type.
+
+In Java, there are two types of casting:
+
+Widening Casting (automatically) - converting a smaller type to a larger type size
+byte -> short -> char -> int -> long -> float -> double
+
+Narrowing Casting (manually) - converting a larger type to a smaller size type
+double -> float -> long -> int -> char -> short -> byte
+
+Ans 9.Boxing refers to the conversion of a primitive value into an object of the corresponding wrapper class .For example, converting int to Integer class.
+
+Unboxing on the other hand refers to converting an object of a wrapper type to its corresponding primitive value. For example conversion of Integer to int. 
+
+Ans 10.Keywords are the reserved words that have a pre defined meaning for the compiler and hence are restricted to be used as identifiers.
+
+Identifiers are the name assigned to different programming constructs like classes, interfaces, methods ,variables etc.
+
+Literals are the values that are assigned to Identifiers.
+
