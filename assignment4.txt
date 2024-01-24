@@ -1,0 +1,122 @@
+ans1.In Java, Exception is an unwanted or unexpected event, which occurs during the execution of a program, i.e. at run time, that disrupts the normal flow of the program’s instructions. Exceptions can be caught and handled by the program. When an exception occurs within a method, it creates an object. This object is called the exception object. It contains information about the exception, such as the name and description of the exception and the state of the program when the exception occurred.
+
+ans2.Exceptions can be categorized in two ways:
+
+ 1) Built-in Exceptions
+		a)Checked Exception:- Checked exceptions are called compile-time exceptions because these exceptions are checked at compile-time by the compiler.
+
+		b)Unchecked Exception:-  The unchecked exceptions are just opposite to the checked exceptions. The compiler will not check these exceptions at compile time. In simple words, if a program throws an unchecked exception, and even if we didn’t handle or declare it, the program would not give a compilation error.
+
+
+ 2) User-Defined Exceptions:- Sometimes, the built-in exceptions in Java are not able to describe a certain situation. In such cases, users can also create exceptions, which are called ‘user-defined Exceptions’. 
+
+
+ ans3. Java provides five keywords that are used to handle the exception. The following  describes each.
+
+
+ a)try:-The "try" keyword is used to  specify a block where we should place an exception code. It means we can't use try block alone. The try block must be followed by either catch or finally.
+
+ b)catch:-	The "catch" block is used to handle the exception. It must be preceded by try block which means we can't use catch block alone. It can be followed by finally block later.
+
+ c)finally:-The "finally" block is used to execute the necessary code of the program. It is executed whether an exception is handled or not.
+
+ d)throw:-	The "throw" keyword is used to throw an exception.
+
+ e)throws:-	The "throws" keyword is used to declare exceptions. It specifies that there may occur an exception in the method. It doesn't throw an exception. It is always used with method signature.
+
+ans4. a)String getMessage() - This method returns the message String of Throwable and the message can be provided while creating the exception through itÂ’s constructor.
+
+      b)String getLocalizedMessage() -This method is provided so that subclasses can override it to provide locale specific message to the calling program. Throwable class implementation of this method simply use getMessage() method to return the exception message.
+
+      c)synchronized Throwable getCause() – This method returns the cause of the exception or null id the cause is unknown.
+
+      d)String toString() – This method returns the information about Throwable in String format, the returned String contains the name of Throwable class and localized message.
+
+      e)void printStackTrace() – This method prints the stack trace information to the standard error stream, this method is overloaded and we can pass PrintStream or PrintWriter as argument to write the stack trace information to the file or stream.
+
+ans5.RuntimeExceptions are those exceptions which are checked at runtime. RuntimeException is the superclass of all those exceptions that can be thrown during the normal execution of the Java program. These are also called as unchecked exceptions. RuntimeException and their subclasses are known as unchecked exceptions. RuntimeExceptions can be avoided by programmer
+
+
+ans6. The throw keyword in Java is used to explicitly throw an exception from a method or any block of code. We can throw either checked or unchecked exception. The throw keyword is mainly used to throw custom exceptions. 
+
+
+The flow of execution of the program stops immediately after the throw statement is executed and the nearest enclosing try block is checked to see if it has a catch statement that matches the type of exception. If it finds a match, controlled is transferred to that statement otherwise next enclosing try block is checked, and so on. If no matching catch is found then the default exception handler will halt the program. 
+
+
+throws is a keyword in Java that is used in the signature of a method to indicate that this method might throw one of the listed type exceptions. The caller to these methods has to handle the exception using a try-catch block. 
+
+In a program, if there is a chance of raising an exception then the compiler always warns us about it and compulsorily we should handle that checked exception, Otherwise, we will get compile time error saying unreported exception XXX must be caught or declared to be thrown. To prevent this compile time error we can handle the exception in two ways: 
+
+a)By using try catch
+b)By using the throws keyword
+
+We can use the throws keyword to delegate the responsibility of exception handling to the caller (It may be a method or JVM) then the caller method is responsible to handle that exception.  
+
+ans7. Difference between Errors and Exceptions in Java
+
+1.	The error indicates trouble that primarily occurs due to the scarcity of system resources.
+
+	The exceptions are the issues that can appear at runtime and compile time.
+
+2.	It is not possible to recover from an error.
+
+	It is possible to recover from an exception.
+
+3.	In java, all the errors are unchecked.
+
+	In java, the exceptions can be both checked and unchecked.
+
+4.	The system in which the program is running is responsible for errors.
+
+	The code of the program is accountable for exceptions.
+
+
+5.	Error are described in the java.lang.Error package.	T
+
+    Exception are described in java.lang.Exception package
+
+ans8. All exception and error types are subclasses of the class Throwable, which is the base class of the hierarchy. One branch is headed by Exception. This class is used for exceptional conditions that user programs should catch. NullPointerException is an example of such an exception. 
+
+Another branch, Error is used by the Java run-time system(JVM) to indicate errors having to do with the run-time environment itself(JRE). StackOverflowError is an example of such an error.
+
+ans9. Package in Java is a mechanism to encapsulate a group of classes, sub packages and interfaces. Packages are used for:
+
+   a) Preventing naming conflicts. For example there can be two classes with name Employee in two packages, college.staff.cse.Employee and college.staff.ee.Employee
+
+   b)Making searching/locating and usage of classes, interfaces, enumerations and annotations easier
+
+   c)Providing controlled access: protected and default have package level access control. A protected member is accessible by classes in the same package and its subclasses. A default member (without any access specifier) is accessible by classes in the same package only.
+
+   d)Packages can be considered as data encapsulation (or data-hiding).
+
+ans10.Whenever we are writing our classes we have to provide some information about our classes to the JVM like whether this class can be accessible from anywhere or not, whether child class creation is possible or not, whether object creation is possible or not etc. we can specify this information by using an appropriate keyword in java called access modifiers. So access modifiers are used to set the accessibility of classes, methods, and other members.
+
+Modifier 1: Public Access Modifiers
+
+If a class is declared as public then we can access that class from anywher
+
+Modifier 2: Protected Access Modifier
+
+This modifier can be applied to the data member, method, and constructor, but this modifier can’t be applied to the top-level classes and interface.
+
+A member is declared as protected as we can access that member within the current package and only in the child class of the outside package.
+
+Modifier 3: Private Access Modifiers
+
+This modifier is not applicable for top-level classes or interfaces. It is only applicable to constructors, methods, and fields inside the classes.  
+
+If a variable or methods or constructor is declared as private then we can access them only from within the class i.e from outside the class we can’t access them.
+
+Modifier 4: Package(Default) Access Modifier  
+
+A class or method or variable declare without any access modifier then is considered that it has a package(default)access modifier The default modifier act as public within the same package and acts as private outside the package. If a class is declared as default then we can access that class only within the current package i.e from the outside package we can’t access it. Hence, the default access modifier is also known as the package–level access modifier. A similar rule also applies for variables and methods in java.
+
+ans11. In java, we have 7 non-access modifiers. They are used with classes, methods, variables, constructors, etc to provide information about their behavior to JVM. They are as follows:
+
+a)static
+b)final
+c)abstract
+d)synchronized
+e)transient
+f)volatile
+g)native
